@@ -1,13 +1,9 @@
 # Hybrid CNN-Transformer for Knee Osteoarthritis Classification
 
 ## Overview
-Implementation of a hybrid architecture combining ResNet-50 
-and Vision Transformer (ViT-Base) with cross-attention fusion 
-for automated Kellgren-Lawrence (KL) grading of knee 
-osteoarthritis from radiographs.
+Implementation of a hybrid architecture combining ResNet-50 and Vision Transformer (ViT-Base) with cross-attention fusion for automated Kellgren-Lawrence (KL) grading of knee osteoarthritis from radiographs.
 
-Paper: "A Hybrid CNN-Transformer Architecture for 
-Interpretable Knee Osteoarthritis Diagnosis"
+Paper: "A Hybrid CNN-Transformer Architecture for Interpretable Knee Osteoarthritis Diagnosis"
 Journal: Scientific Reports (Under Review)
 
 ## Dataset
@@ -20,17 +16,50 @@ Journal: Scientific Reports (Under Review)
 ## Requirements
 See requirements.txt
 
-## Usage
-1. Upload notebook to Google Colab
-2. Mount Google Drive
-3. Run Cell 1-2 (setup + packages)
-4. Run Cell 3-10 (data loading)
-5. Run Cell 18 (ResNet-50 definition)
-6. Run Cell 37-41 (Hybrid model training)
-7. Run Cell 42-45 (model reload + evaluation)
-8. Run Cell 46 (IoU + Latency analysis)
-9. Run Cell 47-51 (results + visualization)
-10. Run Cell 52-54 (XAI analysis)
+## Usage - Run Complete Pipeline
+Open `Knee_Osteoarthritis_Main_Code.ipynb` in Google Colab:
+
+**Setup & Data (Cells 1-10):**
+- Cell 1: Mount Google Drive
+- Cell 2: Install packages (timm, grad-cam)
+- Cell 3: Import libraries + set random seeds
+- Cell 4: Dataset path setup
+- Cells 5-7: Dataset exploration + visualization
+- Cell 8: Custom dataset class
+- Cell 9: Data augmentation transforms
+- Cell 10: Create DataLoaders
+
+**Baseline Models Training (Cells 11-36):**
+- Cells 11-14: EfficientNet-B0
+- Cells 15-17: ConvNeXt
+- Cells 18-21: ResNet-50 Baseline
+- Cells 22-25: DenseNet-161
+- Cells 26-29: Swin Transformer
+- Cells 30-36: Evaluation + visualization
+
+**Hybrid Model Training (Cells 37-41):**
+- Cell 37: ViT Branch definition
+- Cell 38: CNN Branch definition
+- Cell 39: Cross-Attention Fusion module
+- Cell 40: Complete Hybrid model
+- Cell 41: Train Hybrid model
+
+**Evaluation Only - Skip Training (Cells 42-51):**
+- Cell 42: Dataset class (reload)
+- Cell 43: ResNet50 definition (reload)
+- Cell 44: Hybrid model definition (reload)
+- Cell 45: Load pretrained models
+- Cell 46: IoU expansion (150 samples) + inference latency
+- Cell 47: Evaluate both models on test set
+- Cell 48: Extract variables for visualization
+- Cell 49: Generate all visualizations
+- Cell 50: Export results to CSV
+- Cell 51: Final summary report
+
+**Explainability Analysis (Cells 52-54):**
+- Cell 52: Grad-CAM visualization
+- Cell 53: Attention Rollout
+- Cell 54: XAI comparison + IoU calculation
 
 ## Results
 | Model | QWK | Accuracy | Macro F1 |
@@ -57,7 +86,7 @@ See results/ folder for detailed CSV files.
 ## Citation
 If you use this code, please cite:
 [Rana Muhammad Zain Ul Abideen, Md Nyem Hasan Bhuiyan, Naveed Anwer Butt, Imran Ashraf, Daniel Gavilanes, Manuel Masias Vergara]. 
-"A Hybrid CNN-Transformer Architecture for Interpretable Knee Osteoarthritis Diagnosis." Scientific Reports (Under Review), 2025.
+"A Hybrid CNN-Transformer Architecture for Interpretable Knee Osteoarthritis Diagnosis." Scientific Reports (Under Review), 2026.
 
 ## License
 MIT License
