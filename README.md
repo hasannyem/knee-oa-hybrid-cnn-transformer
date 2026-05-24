@@ -60,7 +60,7 @@ Enable GPU: **Runtime → Change runtime type → T4 GPU**
 All trained models saved to: `MyDrive/knee/outputs/`
 
 ---
-
+```
 ### Step 3: Download Models
 Download all `.pth` files from Google Drive to local PC:
 local_models/
@@ -77,6 +77,7 @@ local_models/
 ├── best_densenet_model.pth
 ├── best_swin_model.pth
 └── best_ablation_concat_model.pth
+```
 ### Step 4: Evaluation (Local PC — CPU)
 Open `Knee_OA_Evaluation.ipynb` in Jupyter Notebook.
 
