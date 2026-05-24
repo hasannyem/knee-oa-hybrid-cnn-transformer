@@ -32,14 +32,14 @@ knee-oa-hybrid-cnn-transformer/
 ### Step 1: Dataset Setup
 Download dataset from Kaggle:  
 https://www.kaggle.com/datasets/shashwatwork/knee-osteoarthritis-dataset-with-severity
-
+```
 Upload to Google Drive with this structure:
 MyDrive/knee/data/
 ├── train/  (0/, 1/, 2/, 3/, 4/)
 ├── val/    (0/, 1/, 2/, 3/, 4/)
 └── test/   (0/, 1/, 2/, 3/, 4/)
 Create output folder: `MyDrive/knee/outputs/`
-
+```
 ---
 
 ### Step 2: Model Training (Google Colab + GPU)
