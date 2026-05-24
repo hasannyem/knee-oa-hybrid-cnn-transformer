@@ -89,9 +89,14 @@ DATA_DIR  = Path(r"your/path/to/data")
 Run all cells. Results and figures saved to `MODEL_DIR/results/`
 
 
+---
+
 ## Hardware
-- GPU: NVIDIA T4 (Google Colab Pro)
-- Framework: PyTorch 2.0, CUDA 11.8
+- **Training:** NVIDIA T4 GPU (Google Colab Pro), PyTorch 2.0, CUDA 11.8
+- **Evaluation:** CPU (Intel), PyTorch 2.0
+- **Note:** Results may vary slightly due to hardware differences
+
+---
 - Note: Results may vary slightly on different hardware
 
 ## Citation
