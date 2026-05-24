@@ -23,8 +23,8 @@ knee-oa-hybrid-cnn-transformer/
 ├── Knee_OA_Training.ipynb      # Training (Google Colab + GPU)
 ├── Knee_OA_Evaluation.ipynb    # Evaluation (Local PC / CPU)
 ├── requirements.txt
-├── results/                    # CSV results files
-└── figures/                    # Generated figures
+├── Tables/                    # CSV results files
+└── Figures/                    # Generated figures
 ```
 
 ## Usage
