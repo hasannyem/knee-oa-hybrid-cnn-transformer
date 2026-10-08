@@ -102,7 +102,7 @@ Run all cells. Results and figures saved to `MODEL_DIR/results/`
 ## Citation
 If you use this code, please cite:
 [Rana Muhammad Zain Ul Abideen, Md Nyem Hasan Bhuiyan, Naveed Anwer Butt, Imran Ashraf, Daniel Gavilanes, Manuel Masias Vergara]. 
-"A Hybrid CNN-Transformer Architecture for Interpretable Knee Osteoarthritis Diagnosis." Scientific Reports (Under Review), 2026.
+"A Hybrid CNN-Transformer Architecture for Interpretable Knee Osteoarthritis Diagnosis." Scientific Reports, 2026.
 
 ## License
 MIT License
